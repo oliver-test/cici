@@ -26,7 +26,7 @@ def get_issuetype(issuetype):
     return issuetypes[issuetype]
 #创建bug
 def jira_create_issue(issue_dict):
-    jira = JIRA(server='http://jira.hy-sport.cn',basic_auth=('machaoran', '111111'))
+    jira = JIRA(server='**',basic_auth=('machaoran', '111111'))
     # new_issue = jira.create_issue(fields=issue_dict)
     
     if issue_dict['project'] ==  {'id': '10302'}:
